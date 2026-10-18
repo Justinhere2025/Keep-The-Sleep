@@ -1,6 +1,4 @@
 
-.gitignore
-100%
 # ============================================
 # GODOT PROJECT .gitignore
 # ============================================
@@ -107,5 +105,3 @@ bin/
 *.bak
 # Extra temporary files                  
 *.tmp
-Shortcut added
-Displaying .gitignore.
