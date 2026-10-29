@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cwwjon7dxs3cb"]
+
+[ext_resource type="Texture2D" uid="uid://yct0q0hwkyei" path="res://Piskel/Airpods.png" id="1_5ttir"]
+
+[node name="Sprite2D" type="Sprite2D" unique_id=2005478553]
+texture = ExtResource("1_5ttir")

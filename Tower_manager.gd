@@ -12,6 +12,7 @@ var selected_tower: PackedScene = null
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("select_Airpods"):
+		print("Airpods detected!")
 		selected_tower = Airpods
 
 	if Input.is_action_just_pressed("select_Blanket"):
@@ -36,4 +37,18 @@ func _process(_delta: float) -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+			print("Map Clicked!")
 			place_tower()
+			
+func place_tower() -> void:
+	if selected_tower == null:
+		print("No tower selected")
+		return
+		
+	var tower = selected_tower.instantiate();
+	add_child(tower)
+	
+	tower.global_position = get_global_mouse_position()
+	tower.z_index = 10
+	
+	print("Tower Placed!")

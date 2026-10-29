@@ -3,7 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://dnd61b1ia1e00" path="res://Assets/Tileset.png" id="1_x0y78"]
 [ext_resource type="Texture2D" uid="uid://ckbiacstkaylp" path="res://Piskel/Sun.png" id="4_83fej"]
 [ext_resource type="Script" uid="uid://00cjbq208n8a" path="res://Tower_manager.gd" id="4_ba2i4"]
+[ext_resource type="PackedScene" uid="uid://cwwjon7dxs3cb" path="res://Towers/Airpods.tscn" id="5_f3utf"]
 [ext_resource type="Script" uid="uid://cl3823medc5d2" path="res://path_follow_2d.gd" id="5_gieg7"]
+[ext_resource type="PackedScene" uid="uid://bh7ykster8snh" path="res://Towers/Blanket.tscn" id="6_cwyoe"]
+[ext_resource type="PackedScene" uid="uid://r73vk5xtemtb" path="res://Towers/Book.tscn" id="7_qmqe4"]
+[ext_resource type="PackedScene" uid="uid://c6d84cbppkut8" path="res://Towers/Milk.tscn" id="8_ct1mj"]
+[ext_resource type="PackedScene" uid="uid://vtn6cyqhm42" path="res://Towers/Picture.tscn" id="9_38p4l"]
+[ext_resource type="PackedScene" uid="uid://c8bv6vl4cdsx" path="res://Towers/Pillow.tscn" id="10_p7ypd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y1tr2"]
 texture = ExtResource("1_x0y78")
@@ -15874,16 +15880,22 @@ zoom = Vector2(0.335, 0.315)
 curve = SubResource("Curve2D_83fej")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=1604379024]
-position = Vector2(467.00003, 672)
+position = Vector2(465, 687)
 rotation = -1.5743248
 loop = false
 script = ExtResource("5_gieg7")
 
 [node name="Sun" type="Sprite2D" parent="Path2D/PathFollow2D" unique_id=1828120193]
-position = Vector2(26.631367, -0.9985094)
+position = Vector2(44.045586, -12.844727)
 rotation = 1.5652697
 scale = Vector2(3.5895786, 4.48696)
 texture = ExtResource("4_83fej")
 
-[node name="Node2D" type="Node2D" parent="." unique_id=121414810]
+[node name="Tower Placer" type="Node2D" parent="." unique_id=121414810]
 script = ExtResource("4_ba2i4")
+Airpods = ExtResource("5_f3utf")
+Blanket = ExtResource("6_cwyoe")
+Book = ExtResource("7_qmqe4")
+Milk = ExtResource("8_ct1mj")
+Picture = ExtResource("9_38p4l")
+Pillow = ExtResource("10_p7ypd")
