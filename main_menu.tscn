@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://kprekmqymdbm"]
+
+[ext_resource type="Script" uid="uid://dsk5f70erihyh" path="res://main_menu.gd" id="1_06t4h"]
+
+[node name="Node2D" type="Node2D" unique_id=651189942]
+
+[node name="MainMenu" type="Control" parent="." unique_id=72650602]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="CenterContainer" type="CenterContainer" parent="MainMenu" unique_id=1537920509]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu/CenterContainer" unique_id=527973289]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MainMenu/CenterContainer/VBoxContainer" unique_id=901518739]
+layout_mode = 2
+text = "Keep The Sleep"
+
+[node name="Playbutton" type="Button" parent="MainMenu/CenterContainer/VBoxContainer" unique_id=1382304538]
+layout_mode = 2
+text = "Play"
+
+[node name="OptionsButton" type="Button" parent="MainMenu/CenterContainer/VBoxContainer" unique_id=1932968838]
+layout_mode = 2
+text = "Options"
+
+[node name="Quitbutton" type="Button" parent="MainMenu/CenterContainer/VBoxContainer" unique_id=172156636]
+layout_mode = 2
+text = "Exit"
+
+[connection signal="pressed" from="MainMenu/CenterContainer/VBoxContainer/Playbutton" to="MainMenu" method="_on_playbutton_pressed"]
+[connection signal="pressed" from="MainMenu/CenterContainer/VBoxContainer/OptionsButton" to="MainMenu" method="_on_options_button_pressed"]
+[connection signal="pressed" from="MainMenu/CenterContainer/VBoxContainer/Quitbutton" to="MainMenu" method="_on_quitbutton_pressed"]

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dpehder3un43h"]
 
-[ext_resource type="Texture2D" uid="uid://dnd61b1ia1e00" path="res://Assets/Tileset.png" id="1_x0y78"]
-[ext_resource type="Texture2D" uid="uid://ckbiacstkaylp" path="res://Piskel/Sun.png" id="4_83fej"]
+[ext_resource type="Texture2D" uid="uid://cnydr6nebphip" path="res://Assets/Tileset.png" id="1_x0y78"]
+[ext_resource type="Texture2D" uid="uid://cm0qumabu4bh" path="res://Piskel/Sun.png" id="4_83fej"]
 [ext_resource type="Script" uid="uid://00cjbq208n8a" path="res://Tower_manager.gd" id="4_ba2i4"]
 [ext_resource type="PackedScene" uid="uid://cwwjon7dxs3cb" path="res://Towers/Airpods.tscn" id="5_f3utf"]
 [ext_resource type="Script" uid="uid://cl3823medc5d2" path="res://path_follow_2d.gd" id="5_gieg7"]
