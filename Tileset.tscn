@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dpehder3un43h"]
 
+[ext_resource type="Script" uid="uid://bfbroa57qaqtx" path="res://tileset.gd" id="1_f3utf"]
 [ext_resource type="Texture2D" uid="uid://dnd61b1ia1e00" path="res://Assets/Tileset.png" id="1_x0y78"]
-[ext_resource type="Texture2D" uid="uid://ckbiacstkaylp" path="res://Piskel/Sun.png" id="4_83fej"]
 [ext_resource type="Script" uid="uid://00cjbq208n8a" path="res://Tower_manager.gd" id="4_ba2i4"]
 [ext_resource type="PackedScene" uid="uid://cwwjon7dxs3cb" path="res://Towers/Airpods.tscn" id="5_f3utf"]
 [ext_resource type="Script" uid="uid://cl3823medc5d2" path="res://path_follow_2d.gd" id="5_gieg7"]
@@ -15864,7 +15864,8 @@ _data = {
 }
 point_count = 6
 
-[node name="Node2D" type="Node2D" unique_id=1031776128]
+[node name="Stage Level" type="Node2D" unique_id=1031776128]
+script = ExtResource("1_f3utf")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=518363257]
 position = Vector2(256, 327)
@@ -15885,12 +15886,6 @@ rotation = -1.5743248
 loop = false
 script = ExtResource("5_gieg7")
 
-[node name="Sun" type="Sprite2D" parent="Path2D/PathFollow2D" unique_id=1828120193]
-position = Vector2(44.045586, -12.844727)
-rotation = 1.5652697
-scale = Vector2(3.5895786, 4.48696)
-texture = ExtResource("4_83fej")
-
 [node name="Tower Placer" type="Node2D" parent="." unique_id=121414810]
 script = ExtResource("4_ba2i4")
 Airpods = ExtResource("5_f3utf")
@@ -15899,3 +15894,6 @@ Book = ExtResource("7_qmqe4")
 Milk = ExtResource("8_ct1mj")
 Picture = ExtResource("9_38p4l")
 Pillow = ExtResource("10_p7ypd")
+
+[node name="Enemy Spawner" type="Marker2D" parent="." unique_id=1537983464]
+position = Vector2(465, 692)
