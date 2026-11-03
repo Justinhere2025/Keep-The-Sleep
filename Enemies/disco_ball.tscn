@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://w6hot0mv5lpr"]
+
+[ext_resource type="Texture2D" uid="uid://b7tswiwlfn7bf" path="res://Piskel/Disco Ball.png" id="1_eqfb8"]
+
+[node name="Disco_Ball" type="Sprite2D" unique_id=103136098]
+texture = ExtResource("1_eqfb8")
