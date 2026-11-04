@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bclmq4rmy5yx3"]
+
+[ext_resource type="Texture2D" uid="uid://dlu1a64gf5784" path="res://Piskel/Picture.png" id="1_8l1pg"]
+
+[node name="Picture" type="Node2D" unique_id=1764496051]
+
+[node name="Picture Sprite" type="Sprite2D" parent="." unique_id=1950400199]
+texture = ExtResource("1_8l1pg")
+
+[node name="Muzzle" type="Marker2D" parent="Picture Sprite" unique_id=878394837]

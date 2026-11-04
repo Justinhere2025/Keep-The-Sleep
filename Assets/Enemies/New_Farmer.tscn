@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://driy5rsj4da34"]
+
+[ext_resource type="Texture2D" uid="uid://c8xwsi58mow6b" path="res://Piskel/Farmer.png" id="1_04rik"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nfm0u"]
+radius = 8.0
+height = 28.0
+
+[node name="PathFollow2D" type="PathFollow2D" unique_id=639989169]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1650241499]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1861086982]
+texture = ExtResource("1_04rik")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1191770658]
+shape = SubResource("CapsuleShape2D_nfm0u")

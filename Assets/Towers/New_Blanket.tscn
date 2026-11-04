@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b1ml3p6w3qpwk"]
+
+[ext_resource type="Texture2D" uid="uid://b2lnr0xwco7if" path="res://Piskel/Blanket.png" id="1_5kdci"]
+
+[node name="Blanket" type="Node2D" unique_id=446675842]
+
+[node name="Blanket Sprite" type="Sprite2D" parent="." unique_id=1667264320]
+texture = ExtResource("1_5kdci")
+
+[node name="Muzzle" type="Marker2D" parent="Blanket Sprite" unique_id=1191052862]
+position = Vector2(0, 15)

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bgosq8f8xaxg7"]
+
+[ext_resource type="Texture2D" uid="uid://b7tswiwlfn7bf" path="res://Piskel/Disco Ball.png" id="1_i8pes"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nfm0u"]
+radius = 13.0
+
+[node name="PathFollow2D" type="PathFollow2D" unique_id=1028302538]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1687408688]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=485036903]
+texture = ExtResource("1_i8pes")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1872604189]
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_nfm0u")

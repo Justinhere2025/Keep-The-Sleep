@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b1mfil4w2qqoa"]
+
+[ext_resource type="Script" uid="uid://cxdu44p0ibah6" path="res://Assets/Enemies/Sun.gd" id="1_wpeky"]
+[ext_resource type="Texture2D" uid="uid://ckbiacstkaylp" path="res://Piskel/Sun.png" id="2_pqt6d"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nfm0u"]
+
+[node name="Sun" type="PathFollow2D" unique_id=1152759435]
+script = ExtResource("1_wpeky")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=175670125]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=984353288]
+texture = ExtResource("2_pqt6d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=374395463]
+shape = SubResource("CircleShape2D_nfm0u")

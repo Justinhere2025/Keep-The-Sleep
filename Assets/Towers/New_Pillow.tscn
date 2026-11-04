@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dndeotq7oyn46"]
+
+[ext_resource type="Texture2D" uid="uid://hxxj5bg3aryx" path="res://Piskel/Pillow.png" id="1_v0aga"]
+
+[node name="Pillow" type="Node2D" unique_id=917013675]
+
+[node name="Pillow Sprite" type="Sprite2D" parent="." unique_id=438159731]
+texture = ExtResource("1_v0aga")
+
+[node name="Muzzle" type="Marker2D" parent="Pillow Sprite" unique_id=810833673]

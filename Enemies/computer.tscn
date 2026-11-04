@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://cu3eoayec5md"]
-
-[ext_resource type="Texture2D" uid="uid://cmxij4qeh5ccw" path="res://Piskel/Computer.png" id="1_d6gwl"]
-
-[node name="Computer" type="Sprite2D" unique_id=385909959]
-texture = ExtResource("1_d6gwl")

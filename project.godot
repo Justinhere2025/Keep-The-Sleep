@@ -11,14 +11,15 @@ config_version=5
 [application]
 
 config/name="Keep the sleep"
-run/main_scene="uid://dpehder3un43h"
+run/main_scene="uid://dr541essb4b7u"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=1280
+window/size/viewport_height=720
 window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
 
 [input]
 

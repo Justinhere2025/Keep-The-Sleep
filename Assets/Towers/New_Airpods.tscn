@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://crkcy6ymrg1kr"]
+
+[ext_resource type="Texture2D" uid="uid://yct0q0hwkyei" path="res://Piskel/Airpods.png" id="1_ccwir"]
+
+[node name="Airpods" type="Node2D" unique_id=1494964426]
+
+[node name="Airpods Sprite" type="Sprite2D" parent="." unique_id=1623796927]
+texture = ExtResource("1_ccwir")
+
+[node name="Muzzle" type="Marker2D" parent="Airpods Sprite" unique_id=1504323207]
+position = Vector2(0, 12)

@@ -1,21 +1,111 @@
 [gd_scene format=3 uid="uid://dpehder3un43h"]
 
 [ext_resource type="Script" uid="uid://bfbroa57qaqtx" path="res://tileset.gd" id="1_f3utf"]
-[ext_resource type="Texture2D" uid="uid://dnd61b1ia1e00" path="res://Assets/Tileset.png" id="1_x0y78"]
-[ext_resource type="PackedScene" uid="uid://c48tpbplsjn85" path="res://Enemies/sun.tscn" id="2_cejvy"]
-[ext_resource type="PackedScene" uid="uid://danu6gv6efrd" path="res://Enemies/angry_clock.tscn" id="3_c7mgj"]
+[ext_resource type="Texture2D" uid="uid://dnd61b1ia1e00" path="res://Resources/Tilesets/Tileset.png" id="1_x0y78"]
+[ext_resource type="Texture2D" uid="uid://ckbiacstkaylp" path="res://Piskel/Sun.png" id="2_cejvy"]
+[ext_resource type="Texture2D" uid="uid://mt37aq8cgrm5" path="res://Piskel/Angry Clock.png" id="3_c7mgj"]
 [ext_resource type="Script" uid="uid://00cjbq208n8a" path="res://Tower_manager.gd" id="4_ba2i4"]
-[ext_resource type="PackedScene" uid="uid://dsc16pgj5fqin" path="res://Enemies/angry_dad.tscn" id="4_mjw3h"]
-[ext_resource type="PackedScene" uid="uid://cwwjon7dxs3cb" path="res://Towers/Airpods.tscn" id="5_f3utf"]
-[ext_resource type="PackedScene" uid="uid://cu3eoayec5md" path="res://Enemies/computer.tscn" id="5_gcapp"]
+[ext_resource type="Texture2D" uid="uid://ddwlgxrjmst76" path="res://Piskel/ANGRY DAD.png" id="4_mjw3h"]
+[ext_resource type="PackedScene" uid="uid://cwwjon7dxs3cb" path="res://Assets/Towers/Airpods.tscn" id="5_f3utf"]
+[ext_resource type="Texture2D" uid="uid://cmxij4qeh5ccw" path="res://Piskel/Computer.png" id="5_gcapp"]
 [ext_resource type="Script" uid="uid://cl3823medc5d2" path="res://path_follow_2d.gd" id="5_gieg7"]
-[ext_resource type="PackedScene" uid="uid://bh7ykster8snh" path="res://Towers/Blanket.tscn" id="6_cwyoe"]
-[ext_resource type="PackedScene" uid="uid://w6hot0mv5lpr" path="res://Enemies/disco_ball.tscn" id="6_jh6y4"]
-[ext_resource type="PackedScene" uid="uid://wxwy4g0tl7j2" path="res://Enemies/farmer.tscn" id="7_7x5xp"]
-[ext_resource type="PackedScene" uid="uid://r73vk5xtemtb" path="res://Towers/Book.tscn" id="7_qmqe4"]
-[ext_resource type="PackedScene" uid="uid://c6d84cbppkut8" path="res://Towers/Milk.tscn" id="8_ct1mj"]
-[ext_resource type="PackedScene" uid="uid://vtn6cyqhm42" path="res://Towers/Picture.tscn" id="9_38p4l"]
-[ext_resource type="PackedScene" uid="uid://c8bv6vl4cdsx" path="res://Towers/Pillow.tscn" id="10_p7ypd"]
+[ext_resource type="PackedScene" uid="uid://bh7ykster8snh" path="res://Assets/Towers/Blanket.tscn" id="6_cwyoe"]
+[ext_resource type="Texture2D" uid="uid://b7tswiwlfn7bf" path="res://Piskel/Disco Ball.png" id="6_jh6y4"]
+[ext_resource type="Texture2D" uid="uid://c8xwsi58mow6b" path="res://Piskel/Farmer.png" id="7_7x5xp"]
+[ext_resource type="PackedScene" uid="uid://r73vk5xtemtb" path="res://Assets/Towers/Book.tscn" id="7_qmqe4"]
+[ext_resource type="PackedScene" uid="uid://c6d84cbppkut8" path="res://Assets/Towers/Milk.tscn" id="8_ct1mj"]
+[ext_resource type="PackedScene" uid="uid://vtn6cyqhm42" path="res://Assets/Towers/Picture.tscn" id="9_38p4l"]
+[ext_resource type="PackedScene" uid="uid://c8bv6vl4cdsx" path="res://Assets/Towers/Pillow.tscn" id="10_p7ypd"]
+
+[sub_resource type="PackedScene" id="PackedScene_jqdrh"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"id_paths": [],
+"names": PackedStringArray("Sun", "Sprite2D", "texture"),
+"node_count": 1,
+"node_ids": PackedInt32Array(337955070),
+"node_paths": [],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 1, 2, 0, 0),
+"variants": [ExtResource("2_cejvy")],
+"version": 3
+}
+
+[sub_resource type="PackedScene" id="PackedScene_rq0o5"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"id_paths": [],
+"names": PackedStringArray("Angry_Clock", "Sprite2D", "texture"),
+"node_count": 1,
+"node_ids": PackedInt32Array(765505326),
+"node_paths": [],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 1, 2, 0, 0),
+"variants": [ExtResource("3_c7mgj")],
+"version": 3
+}
+
+[sub_resource type="PackedScene" id="PackedScene_jn5bd"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"id_paths": [],
+"names": PackedStringArray("Angry Dad", "Sprite2D", "texture"),
+"node_count": 1,
+"node_ids": PackedInt32Array(109814261),
+"node_paths": [],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 1, 2, 0, 0),
+"variants": [ExtResource("4_mjw3h")],
+"version": 3
+}
+
+[sub_resource type="PackedScene" id="PackedScene_i3sio"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"id_paths": [],
+"names": PackedStringArray("Computer", "Sprite2D", "texture"),
+"node_count": 1,
+"node_ids": PackedInt32Array(385909959),
+"node_paths": [],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 1, 2, 0, 0),
+"variants": [ExtResource("5_gcapp")],
+"version": 3
+}
+
+[sub_resource type="PackedScene" id="PackedScene_784sa"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"id_paths": [],
+"names": PackedStringArray("Disco_Ball", "Sprite2D", "texture"),
+"node_count": 1,
+"node_ids": PackedInt32Array(103136098),
+"node_paths": [],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 1, 2, 0, 0),
+"variants": [ExtResource("6_jh6y4")],
+"version": 3
+}
+
+[sub_resource type="PackedScene" id="PackedScene_xdkqt"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"id_paths": [],
+"names": PackedStringArray("Farmer", "Sprite2D", "texture"),
+"node_count": 1,
+"node_ids": PackedInt32Array(812207688),
+"node_paths": [],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 1, 2, 0, 0),
+"variants": [ExtResource("7_7x5xp")],
+"version": 3
+}
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y1tr2"]
 texture = ExtResource("1_x0y78")
@@ -15872,12 +15962,12 @@ point_count = 6
 
 [node name="Stage Level" type="Node2D" unique_id=1031776128]
 script = ExtResource("1_f3utf")
-Sun_scene = ExtResource("2_cejvy")
-Angry_Clock_scene = ExtResource("3_c7mgj")
-ANGRY_DAD_scene = ExtResource("4_mjw3h")
-Computer_scene = ExtResource("5_gcapp")
-Disco_Ball_scene = ExtResource("6_jh6y4")
-Farmer_scene = ExtResource("7_7x5xp")
+Sun_scene = SubResource("PackedScene_jqdrh")
+Angry_Clock_scene = SubResource("PackedScene_rq0o5")
+ANGRY_DAD_scene = SubResource("PackedScene_jn5bd")
+Computer_scene = SubResource("PackedScene_i3sio")
+Disco_Ball_scene = SubResource("PackedScene_784sa")
+Farmer_scene = SubResource("PackedScene_xdkqt")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=518363257]
 position = Vector2(256, 327)

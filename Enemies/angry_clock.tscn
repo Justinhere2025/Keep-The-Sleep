@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://danu6gv6efrd"]
-
-[ext_resource type="Texture2D" uid="uid://mt37aq8cgrm5" path="res://Piskel/Angry Clock.png" id="1_tsx6k"]
-
-[node name="Angry_Clock" type="Sprite2D" unique_id=765505326]
-texture = ExtResource("1_tsx6k")

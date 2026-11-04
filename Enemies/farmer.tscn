@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://wxwy4g0tl7j2"]
-
-[ext_resource type="Texture2D" uid="uid://c8xwsi58mow6b" path="res://Piskel/Farmer.png" id="1_u6hka"]
-
-[node name="Farmer" type="Sprite2D" unique_id=812207688]
-texture = ExtResource("1_u6hka")

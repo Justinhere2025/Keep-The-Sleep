@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://dsc16pgj5fqin"]
-
-[ext_resource type="Texture2D" uid="uid://ddwlgxrjmst76" path="res://Piskel/ANGRY DAD.png" id="1_tal8j"]
-
-[node name="Angry Dad" type="Sprite2D" unique_id=109814261]
-texture = ExtResource("1_tal8j")
