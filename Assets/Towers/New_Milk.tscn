@@ -8,3 +8,4 @@
 texture = ExtResource("1_wsv34")
 
 [node name="Muzzle" type="Marker2D" parent="Milk Sprite" unique_id=2097424972]
+position = Vector2(0, -15)
