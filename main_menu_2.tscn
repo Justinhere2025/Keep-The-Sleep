@@ -8,7 +8,7 @@ texture = ExtResource("1_w43j7")
 modulate_color = Color(0.55828667, 0.55828655, 0.55828655, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3bxay"]
-bg_color = Color(18.892157, 18.892157, 18.892157, 1)
+bg_color = Color(0.8862616, 0.88626146, 0.8862615, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
@@ -55,6 +55,8 @@ size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_3bxay")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3bxay")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3bxay")
 text = "Start Game"
 
 [node name="Button2" type="Button" parent="VBoxContainer" unique_id=1025359606]
@@ -63,6 +65,8 @@ size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_3bxay")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3bxay")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3bxay")
 text = "Options"
 
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=145684538]
@@ -71,6 +75,8 @@ size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_3bxay")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3bxay")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3bxay")
 text = "Quit"
 
 [node name="Label" type="Label" parent="." unique_id=244490009]
