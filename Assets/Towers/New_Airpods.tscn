@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://crkcy6ymrg1kr"]
 
+[ext_resource type="Script" uid="uid://nli30t11l6a7" path="res://Assets/Towers/new_airpods.gd" id="1_4771e"]
 [ext_resource type="Texture2D" uid="uid://yct0q0hwkyei" path="res://Piskel/Airpods.png" id="1_ccwir"]
 
 [node name="Airpods" type="Node2D" unique_id=1494964426]
+scale = Vector2(128, 128)
+script = ExtResource("1_4771e")
 
 [node name="Airpods Sprite" type="Sprite2D" parent="." unique_id=1623796927]
 texture = ExtResource("1_ccwir")

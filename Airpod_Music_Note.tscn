@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dwblpu8lsfp0u"]
+
+[ext_resource type="Texture2D" uid="uid://yct0q0hwkyei" path="res://Piskel/Airpods.png" id="1_0tl0u"]
+[ext_resource type="Texture2D" uid="uid://c2emny47qy27u" path="res://Piskel/Music_Note.png" id="2_vanob"]
+
+[node name="Missile" type="Node2D" unique_id=221887633]
+
+[node name="Airpods" type="Sprite2D" parent="." unique_id=1924380455]
+texture = ExtResource("1_0tl0u")
+
+[node name="Music Note" type="Sprite2D" parent="Airpods" unique_id=1169883466]
+position = Vector2(0, -14)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_vanob")

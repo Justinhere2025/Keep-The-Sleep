@@ -5,6 +5,7 @@
 [node name="Pillow" type="Node2D" unique_id=917013675]
 
 [node name="Pillow Sprite" type="Sprite2D" parent="." unique_id=438159731]
+scale = Vector2(16, 16)
 texture = ExtResource("1_v0aga")
 
 [node name="Muzzle" type="Marker2D" parent="Pillow Sprite" unique_id=810833673]
