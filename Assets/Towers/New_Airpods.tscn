@@ -8,7 +8,6 @@ scale = Vector2(128, 128)
 script = ExtResource("1_4771e")
 
 [node name="Airpods Sprite" type="Sprite2D" parent="." unique_id=1623796927]
-rotation = 6.2831855
 texture = ExtResource("1_ccwir")
 
 [node name="Muzzle" type="Marker2D" parent="Airpods Sprite" unique_id=1504323207]
