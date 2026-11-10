@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://dndeotq7oyn46"]
 
+[ext_resource type="Script" uid="uid://b7tv7m4mhf2og" path="res://Assets/Towers/new_pillow.gd" id="1_th3ci"]
 [ext_resource type="Texture2D" uid="uid://hxxj5bg3aryx" path="res://Piskel/Pillow.png" id="1_v0aga"]
 
 [node name="Pillow" type="Node2D" unique_id=917013675]
+script = ExtResource("1_th3ci")
 
 [node name="Pillow Sprite" type="Sprite2D" parent="." unique_id=438159731]
 scale = Vector2(16, 16)

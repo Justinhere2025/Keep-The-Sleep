@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://thkmbad5obj0"]
 
+[ext_resource type="Script" uid="uid://b0b2i6oqju2yt" path="res://Assets/Towers/new_milk.gd" id="1_fkupl"]
 [ext_resource type="Texture2D" uid="uid://dovju7virkdqg" path="res://Piskel/Milk.png" id="1_wsv34"]
 
 [node name="Milk" type="Node2D" unique_id=684798435]
+script = ExtResource("1_fkupl")
 
 [node name="Milk Sprite" type="Sprite2D" parent="." unique_id=1911423504]
 texture = ExtResource("1_wsv34")

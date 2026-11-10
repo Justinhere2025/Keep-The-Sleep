@@ -16026,7 +16026,7 @@ scale = Vector2(16, 16)
 
 [node name="Picture" parent="Towers" unique_id=1764496051 instance=ExtResource("21_pkt41")]
 position = Vector2(155, 535)
-scale = Vector2(4, 4)
+scale = Vector2(16, 16)
 
 [node name="Pillow" parent="Towers" unique_id=917013675 instance=ExtResource("22_n83cj")]
 position = Vector2(-2240, -854)

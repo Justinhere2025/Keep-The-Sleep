@@ -17,18 +17,18 @@ var wave_spawn_ended
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	current_wave = 0
-	Global.current_wave = current_wave
+	#Global.current_wave = current_wave
 	starting_nodes = get_child_count()
 	current_nodes = get_child_count()
-	postion_to_next_wave()
+	#postion_to_next_wave()
 	
 func positon_to_next_wave():
 	if current_nodes == starting_nodes:
-		if current_wave != 0:
-			Global.moving_into_next_wave = true
+		#if current_wave != 0:
+			#Global.moving_into_next_wave = true
 		SceneTransitionAnimation.play("between_wave")
 		current_wave += 1
-		Global.current_wave = current_wave
+		#Global.current_wave = current_wave
 		await get_tree().create_timer(.5).timeout
 		prepare_spawn("Sun", 2, 2)
 		print(current_wave)

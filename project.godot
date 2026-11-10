@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Keep the sleep"
-run/main_scene="uid://dr541essb4b7u"
+run/main_scene="uid://dpehder3un43h"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

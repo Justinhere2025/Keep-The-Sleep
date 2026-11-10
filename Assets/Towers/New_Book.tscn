@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://crynd6ae0sebn"]
 
+[ext_resource type="Script" uid="uid://dvecsxl8gq0qh" path="res://Assets/Towers/new_book.gd" id="1_fmeuy"]
 [ext_resource type="Texture2D" uid="uid://dj03a44ehfrbk" path="res://Piskel/Book.png" id="1_qcq05"]
 
 [node name="Book" type="Node2D" unique_id=1744375894]
+script = ExtResource("1_fmeuy")
 
 [node name="Book Sprite" type="Sprite2D" parent="." unique_id=1553050283]
 texture = ExtResource("1_qcq05")

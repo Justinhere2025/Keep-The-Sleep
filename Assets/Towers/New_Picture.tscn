@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://bclmq4rmy5yx3"]
 
+[ext_resource type="Script" uid="uid://bherj8uytji1h" path="res://Assets/Towers/new_picture.gd" id="1_4lcmp"]
 [ext_resource type="Texture2D" uid="uid://dlu1a64gf5784" path="res://Piskel/Picture.png" id="1_8l1pg"]
 
 [node name="Picture" type="Node2D" unique_id=1764496051]
+script = ExtResource("1_4lcmp")
 
 [node name="Picture Sprite" type="Sprite2D" parent="." unique_id=1950400199]
 texture = ExtResource("1_8l1pg")
