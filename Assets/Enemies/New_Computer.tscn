@@ -1,13 +1,19 @@
 [gd_scene format=3 uid="uid://ccqk6yq8ywghy"]
 
+[ext_resource type="Script" uid="uid://dhvhmlof4isi3" path="res://Assets/Enemies/character_body_2d.gd" id="1_a78be"]
 [ext_resource type="Texture2D" uid="uid://cmxij4qeh5ccw" path="res://Piskel/Computer.png" id="1_nmun2"]
+[ext_resource type="Script" uid="uid://f3g8afrbx32" path="res://Assets/Enemies/new_computer.gd" id="1_ye8eb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nfm0u"]
 size = Vector2(21, 22)
 
 [node name="PathFollow2D" type="PathFollow2D" unique_id=1238374548]
+script = ExtResource("1_ye8eb")
+speed = 500.0
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2032121870]
+rotation = 1.5707964
+script = ExtResource("1_a78be")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1941025964]
 texture = ExtResource("1_nmun2")

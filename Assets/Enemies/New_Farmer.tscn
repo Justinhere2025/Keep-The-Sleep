@@ -1,14 +1,19 @@
 [gd_scene format=3 uid="uid://driy5rsj4da34"]
 
 [ext_resource type="Texture2D" uid="uid://c8xwsi58mow6b" path="res://Piskel/Farmer.png" id="1_04rik"]
+[ext_resource type="Script" uid="uid://dhvhmlof4isi3" path="res://Assets/Enemies/character_body_2d.gd" id="1_13lqa"]
+[ext_resource type="Script" uid="uid://c4kfhoojxcwp" path="res://Assets/Enemies/new_farmer.gd" id="1_t6syr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nfm0u"]
 radius = 8.0
 height = 28.0
 
 [node name="PathFollow2D" type="PathFollow2D" unique_id=639989169]
+script = ExtResource("1_t6syr")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1650241499]
+rotation = 1.5707964
+script = ExtResource("1_13lqa")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1861086982]
 texture = ExtResource("1_04rik")

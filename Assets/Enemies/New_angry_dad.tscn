@@ -1,14 +1,20 @@
 [gd_scene format=3 uid="uid://cihrt2342c5oi"]
 
+[ext_resource type="Script" uid="uid://ci77c2bciqhax" path="res://Assets/Enemies/new_angry_dad.gd" id="1_5b3h8"]
 [ext_resource type="Texture2D" uid="uid://ddwlgxrjmst76" path="res://Piskel/ANGRY DAD.png" id="1_htvyw"]
+[ext_resource type="Script" uid="uid://dhvhmlof4isi3" path="res://Assets/Enemies/character_body_2d.gd" id="1_r4ofs"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nfm0u"]
 radius = 7.0
 height = 26.0
 
-[node name="Angry Dadf" type="PathFollow2D" unique_id=1034032885]
+[node name="Angry Dad" type="PathFollow2D" unique_id=1034032885]
+script = ExtResource("1_5b3h8")
+speed = 150.0
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1245418788]
+rotation = 1.5707964
+script = ExtResource("1_r4ofs")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1822878381]
 texture = ExtResource("1_htvyw")

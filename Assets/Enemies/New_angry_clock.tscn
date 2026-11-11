@@ -1,16 +1,21 @@
 [gd_scene format=3 uid="uid://4ae26olh45nv"]
 
 [ext_resource type="Texture2D" uid="uid://mt37aq8cgrm5" path="res://Piskel/Angry Clock.png" id="1_kyoui"]
+[ext_resource type="Script" uid="uid://cd7t6ani7bi7q" path="res://Assets/Enemies/new_angry_clock.gd" id="1_nnfa0"]
+[ext_resource type="Script" uid="uid://dhvhmlof4isi3" path="res://Assets/Enemies/character_body_2d.gd" id="2_oknpx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nfm0u"]
 
 [node name="Angry Clock" type="PathFollow2D" unique_id=1622209747]
+script = ExtResource("1_nnfa0")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=473404183]
+[node name="Angry_Clock_Body" type="CharacterBody2D" parent="." unique_id=473404183]
+rotation = 1.5707964
+script = ExtResource("2_oknpx")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=291870836]
+[node name="Sprite2D" type="Sprite2D" parent="Angry_Clock_Body" unique_id=291870836]
 texture = ExtResource("1_kyoui")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1922110334]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Angry_Clock_Body" unique_id=1922110334]
 position = Vector2(-2, -2)
 shape = SubResource("CircleShape2D_nfm0u")

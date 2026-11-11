@@ -1,13 +1,18 @@
 [gd_scene format=3 uid="uid://bgosq8f8xaxg7"]
 
 [ext_resource type="Texture2D" uid="uid://b7tswiwlfn7bf" path="res://Piskel/Disco Ball.png" id="1_i8pes"]
+[ext_resource type="Script" uid="uid://dr56l3fqcqbgk" path="res://Assets/Enemies/new_disco_ball.gd" id="1_nsfl7"]
+[ext_resource type="Script" uid="uid://dhvhmlof4isi3" path="res://Assets/Enemies/character_body_2d.gd" id="1_rpwsc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nfm0u"]
 radius = 13.0
 
 [node name="PathFollow2D" type="PathFollow2D" unique_id=1028302538]
+script = ExtResource("1_nsfl7")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1687408688]
+rotation = 1.5707964
+script = ExtResource("1_rpwsc")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=485036903]
 texture = ExtResource("1_i8pes")

@@ -7,13 +7,18 @@
 [ext_resource type="Texture2D" uid="uid://cmxij4qeh5ccw" path="res://Piskel/Computer.png" id="5_woqu1"]
 [ext_resource type="Texture2D" uid="uid://b7tswiwlfn7bf" path="res://Piskel/Disco Ball.png" id="6_ow2ho"]
 [ext_resource type="Texture2D" uid="uid://c8xwsi58mow6b" path="res://Piskel/Farmer.png" id="7_c7db5"]
-[ext_resource type="Texture2D" uid="uid://dnd61b1ia1e00" path="res://Resources/Tilesets/Tileset.png" id="8_i6787"]
-[ext_resource type="Script" uid="uid://cl3823medc5d2" path="res://path_follow_2d.gd" id="9_ngdpk"]
+[ext_resource type="Texture2D" uid="uid://dcmyxfsv1vlx5" path="res://Resources/Tilesets/Tileset.png" id="8_i6787"]
 [ext_resource type="Script" uid="uid://00cjbq208n8a" path="res://Tower_manager.gd" id="10_cimfj"]
+[ext_resource type="PackedScene" uid="uid://4ae26olh45nv" path="res://Assets/Enemies/New_angry_clock.tscn" id="10_rq0o5"]
 [ext_resource type="PackedScene" uid="uid://cwwjon7dxs3cb" path="res://Assets/Towers/Airpods.tscn" id="11_atvg0"]
+[ext_resource type="PackedScene" uid="uid://cihrt2342c5oi" path="res://Assets/Enemies/New_angry_dad.tscn" id="11_g4r00"]
 [ext_resource type="PackedScene" uid="uid://bh7ykster8snh" path="res://Assets/Towers/Blanket.tscn" id="12_8phkr"]
+[ext_resource type="PackedScene" uid="uid://ccqk6yq8ywghy" path="res://Assets/Enemies/New_Computer.tscn" id="12_u6qov"]
+[ext_resource type="PackedScene" uid="uid://bgosq8f8xaxg7" path="res://Assets/Enemies/New_Disco_Ball.tscn" id="13_5dr2n"]
 [ext_resource type="PackedScene" uid="uid://r73vk5xtemtb" path="res://Assets/Towers/Book.tscn" id="13_jwfi6"]
+[ext_resource type="PackedScene" uid="uid://driy5rsj4da34" path="res://Assets/Enemies/New_Farmer.tscn" id="14_6upqi"]
 [ext_resource type="PackedScene" uid="uid://c6d84cbppkut8" path="res://Assets/Towers/Milk.tscn" id="14_v42gf"]
+[ext_resource type="PackedScene" uid="uid://b1mfil4w2qqoa" path="res://Assets/Enemies/New_sun.tscn" id="15_27sa3"]
 [ext_resource type="PackedScene" uid="uid://vtn6cyqhm42" path="res://Assets/Towers/Picture.tscn" id="15_y5mty"]
 [ext_resource type="PackedScene" uid="uid://c8bv6vl4cdsx" path="res://Assets/Towers/Pillow.tscn" id="16_nhoov"]
 [ext_resource type="PackedScene" uid="uid://crkcy6ymrg1kr" path="res://Assets/Towers/New_Airpods.tscn" id="17_a267a"]
@@ -15985,14 +15990,42 @@ layer_0/tile_data = PackedInt32Array(8847702, 131072, 0, 8651094, 131072, 0, 858
 position = Vector2(-1014, -161)
 zoom = Vector2(0.375, 0.345)
 
-[node name="Path2D" type="Path2D" parent="." unique_id=573178480]
+[node name="Enemy Spawner" type="Marker2D" parent="." unique_id=1537983464]
+position = Vector2(465, 692)
+
+[node name="Path2D" type="Path2D" parent="Enemy Spawner" unique_id=573178480]
+position = Vector2(-465, -692)
 curve = SubResource("Curve2D_83fej")
 
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=1604379024]
+[node name="Angry Clock" parent="Enemy Spawner/Path2D" unique_id=1622209747 instance=ExtResource("10_rq0o5")]
 position = Vector2(465, 687)
 rotation = -1.5743248
-loop = false
-script = ExtResource("9_ngdpk")
+speed = 400.0
+
+[node name="Angry Dad" parent="Enemy Spawner/Path2D" unique_id=1034032885 instance=ExtResource("11_g4r00")]
+position = Vector2(465, 687)
+rotation = -1.5743248
+speed = 80.0
+
+[node name="Computer" parent="Enemy Spawner/Path2D" unique_id=1238374548 instance=ExtResource("12_u6qov")]
+position = Vector2(465, 687)
+rotation = -1.5743248
+speed = 160.0
+
+[node name="Disco Ball" parent="Enemy Spawner/Path2D" unique_id=1028302538 instance=ExtResource("13_5dr2n")]
+position = Vector2(465, 687)
+rotation = -1.5743248
+speed = 240.0
+
+[node name="Farmer" parent="Enemy Spawner/Path2D" unique_id=639989169 instance=ExtResource("14_6upqi")]
+position = Vector2(465, 687)
+rotation = -1.5743248
+speed = 120.0
+
+[node name="Sun" parent="Enemy Spawner/Path2D" unique_id=1152759435 instance=ExtResource("15_27sa3")]
+position = Vector2(465, 687)
+rotation = -1.5743248
+speed = 320.0
 
 [node name="Tower Placer" type="Node2D" parent="." unique_id=121414810]
 script = ExtResource("10_cimfj")
@@ -16003,30 +16036,39 @@ Milk = ExtResource("14_v42gf")
 Picture = ExtResource("15_y5mty")
 Pillow = ExtResource("16_nhoov")
 
-[node name="Enemy Spawner" type="Marker2D" parent="." unique_id=1537983464]
-position = Vector2(465, 692)
+[node name="CanvasLayer" type="CanvasLayer" parent="Tower Placer" unique_id=594350966]
+
+[node name="CashLabel" type="Label" parent="Tower Placer/CanvasLayer" unique_id=1054347483]
+offset_right = 40.0
+offset_bottom = 23.0
 
 [node name="Towers" type="Node2D" parent="." unique_id=1182068649]
 
 [node name="Airpods" parent="Towers" unique_id=1494964426 instance=ExtResource("17_a267a")]
+visible = false
 position = Vector2(260, -540)
 scale = Vector2(16, 16)
 
 [node name="Blanket" parent="Towers" unique_id=446675842 instance=ExtResource("18_p767p")]
+visible = false
 position = Vector2(-615, -449)
 scale = Vector2(16, 16)
 
 [node name="Book" parent="Towers" unique_id=1744375894 instance=ExtResource("19_ydtve")]
+visible = false
 position = Vector2(-174, -458)
 scale = Vector2(16, 16)
 
 [node name="Milk" parent="Towers" unique_id=684798435 instance=ExtResource("20_u1fnp")]
+visible = false
 position = Vector2(-1134, 378)
 scale = Vector2(16, 16)
 
 [node name="Picture" parent="Towers" unique_id=1764496051 instance=ExtResource("21_pkt41")]
+visible = false
 position = Vector2(155, 535)
 scale = Vector2(16, 16)
 
 [node name="Pillow" parent="Towers" unique_id=917013675 instance=ExtResource("22_n83cj")]
+visible = false
 position = Vector2(-2240, -854)
