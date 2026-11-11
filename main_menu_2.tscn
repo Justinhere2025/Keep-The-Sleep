@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://cpfc32paj3atj"]
 
+[ext_resource type="Script" uid="uid://c25kxvoepcx4e" path="res://main_menu_2.gd" id="1_f201x"]
 [ext_resource type="Texture2D" uid="uid://m1nophkf55xx" path="res://360_F_807694971_ILXN3nGMbUYsnmp7TOYGXwTD5T9t7NJN.jpg" id="1_w43j7"]
 [ext_resource type="FontFile" uid="uid://dietajjirwr84" path="res://CreepyHouse_PERSONAL_USE_ONLY.otf" id="2_f201x"]
 
@@ -25,6 +26,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_f201x")
 
 [node name="Panel" type="Panel" parent="." unique_id=1966308454]
 layout_mode = 0
@@ -69,6 +71,16 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_3bxay")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3bxay")
 text = "Options"
 
+[node name="Button4" type="Button" parent="VBoxContainer" unique_id=1448763267]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_3bxay")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3bxay")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3bxay")
+text = "Tutorial"
+
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=145684538]
 layout_mode = 2
 size_flags_vertical = 3
@@ -92,3 +104,8 @@ theme_override_font_sizes/font_size = 103
 text = "Keep The Sleep"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button4" to="." method="_on_tutorial_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_quit_pressed"]
