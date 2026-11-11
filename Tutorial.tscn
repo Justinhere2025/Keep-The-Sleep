@@ -8,6 +8,14 @@
 texture = ExtResource("2_oiqhk")
 modulate_color = Color(0.55828667, 0.55828655, 0.55828655, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ldba"]
+bg_color = Color(0.06666667, 0.08627451, 0.105882354, 0.9019608)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8901961, 0.8901961, 0.8901961, 1)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3bxay"]
 bg_color = Color(0.8862616, 0.88626146, 0.8862615, 1)
 corner_radius_top_left = 16
@@ -17,7 +25,7 @@ corner_radius_bottom_left = 16
 corner_detail = 1
 shadow_size = 5
 
-[node name="MainMenu2" type="Control" unique_id=1170816221]
+[node name="Tutorial" type="Control" unique_id=1170816221]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -38,58 +46,30 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_0ldba")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1493596794]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -237.0
-offset_top = -133.625
-offset_right = 237.0
-offset_bottom = 133.625
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -384.0
+offset_top = -178.0
+offset_right = 382.0
+offset_bottom = 163.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 15
 
-[node name="Button" type="Button" parent="VBoxContainer" unique_id=1876703966]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 45
-theme_override_styles/normal = SubResource("StyleBoxFlat_3bxay")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_3bxay")
-theme_override_styles/hover = SubResource("StyleBoxFlat_3bxay")
-text = "Start Game"
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=768213574]
+layout_mode = 0
+offset_left = -380.0
+offset_top = -163.0
+offset_right = 390.0
+offset_bottom = 160.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_0ldba")
 
-[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1025359606]
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=620318723]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 45
-theme_override_styles/normal = SubResource("StyleBoxFlat_3bxay")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_3bxay")
-theme_override_styles/hover = SubResource("StyleBoxFlat_3bxay")
-text = "Options"
 
-[node name="Button4" type="Button" parent="VBoxContainer" unique_id=1448763267]
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer" unique_id=1610667432]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 45
-theme_override_styles/normal = SubResource("StyleBoxFlat_3bxay")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_3bxay")
-theme_override_styles/hover = SubResource("StyleBoxFlat_3bxay")
-text = "Tutorial"
-
-[node name="Button3" type="Button" parent="VBoxContainer" unique_id=145684538]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 45
-theme_override_styles/normal = SubResource("StyleBoxFlat_3bxay")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_3bxay")
-theme_override_styles/hover = SubResource("StyleBoxFlat_3bxay")
-text = "Quit"
 
 [node name="Label" type="Label" parent="." unique_id=244490009]
 layout_mode = 0
@@ -101,11 +81,22 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 11
 theme_override_fonts/font = ExtResource("3_p3v23")
 theme_override_font_sizes/font_size = 103
-text = "Keep The Sleep"
+text = "Tutorial"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button4" to="." method="_on_tutorial_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_quit_pressed"]
+[node name="BackButton" type="Button" parent="." unique_id=1448763267]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 230.0
+offset_right = 532.0
+offset_bottom = 293.0
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_3bxay")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3bxay")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3bxay")
+text = "Back"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_tutorial_pressed"]
